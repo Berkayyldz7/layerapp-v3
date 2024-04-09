@@ -2,7 +2,7 @@ const JWT = require("jsonwebtoken");
 
 const authenticateToken = (req,res,next)=>{
     const autHeader = req.headers["authorization"];
-    const authToken = autHeader && autHeader.split(" ")[1];
+    const authToken = autHeader?.split(" ")[1];
     if(authToken === null){
         return res.status(400).send({msg:"Unauthorizated token please login first."})
     }
