@@ -15,7 +15,7 @@ class UserDAL {
         //    return user
             return UserModel.find(where)
         } catch (error) {
-            console.log("An error has come about at user.dal.js Line 9")
+            console.log("An error has come about at user.dal.js Line 18")
             throw error
         }
     }
