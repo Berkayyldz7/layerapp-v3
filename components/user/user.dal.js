@@ -37,7 +37,7 @@ class UserDAL {
             console.log(name,password)
             return createdUser
         } catch (error) {
-            console.log("An error has come about at user.dal.js Line 18")
+            console.log("An error has come about at user.dal.js Line 40")
             throw error
         }
     }
